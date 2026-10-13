@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Qml)
+find_package(Qt6 6.5 REQUIRED COMPONENTS Quick Qml QuickControls2)
 
 qt_standard_project_setup(REQUIRES 6.5)
 
@@ -29,6 +29,7 @@ target_link_libraries(blueberry-shell
     PRIVATE
         Qt6::Quick
         Qt6::Qml
+        Qt6::QuickControls2
 )
 
 install(TARGETS blueberry-shell
