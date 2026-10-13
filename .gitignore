@@ -1,0 +1,35 @@
+# Build output
+/build/
+/cmake-build-*/
+/out/
+/dist/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Qt Creator / IDE
+*.user
+*.user.*
+.idea/
+.vscode/
+
+# Generated Qt files
+*.qmlc
+*.jsc
+qt.conf
+
+# Packaging and image artifacts
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.vmdk
+*.log
+
+# OS noise
+.DS_Store
+Thumbs.db
